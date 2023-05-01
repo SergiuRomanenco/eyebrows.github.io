@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e_y_ebrows</title>
+    <link rel="stylesheet" href="./styleHome.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button onclick="topFunction()" class="btnNone" id="myBtn" title="Go to top"><i id="right" class="fa-solid fa-angle-up"></i></button>
+    <!--header-->
+    <header>
+        <div class="contact-header" id="contactHeader">
+            <div class="div-contact">
+                <div class="contact">
+                    <p class="contact_prg">PHONE: +40 790 481 664</p>
+                    <p class="contact_prg">EMAIL: <span class="mail" style="cursor: pointer;" onclick="mailaddress()">dimitria03@mail.ru</span></p>
+                </div>
+                <div class="language">
+                    <p class="contact_prg">GIFT CARD</p>
+                    <p class="contact_prg">TRACK ORDER</p>
+                    <p class="contact_prg">LANGUAGE</p>
+                </div>
+            </div>
+        </div>
+        <nav id="nav" class="nav">
+            <div class="logo">
+                <img class="logotip" onclick="homebtn()" src="../Resources/logo_ebrows.png" alt="logotip">
+            </div>
+            <div class="navigation">
+                <a class="link" href="#">HOME</a>
+                <a class="link" href="#services">SERVICES</a>
+                <a class="link" href="#projects">PROJECTS</a>
+                <a class="link" href="#blog">BLOG</a>
+                <a class="link" href="#contact">CONTACT</a>
+            </div>
+
+            <div class="cos">
+                <i id="bars" class="fa-solid fa-bars" onclick="openNav()"></i>    
+                <i id="cart_shopping" class="fa-regular fa-heart"></i>
+                <i id="heart" class="fa-solid fa-cart-shopping notification1">
+                    <div class="badge1" id="badge1" data-count="0"></div>
+                </i>
+            </div>
+        </nav>
+    </header>
+        <!-- The overlay -->
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <a class="linkMobile" href="#" onclick="disparitie()">HOME</a>
+            <a class="linkMobile" href="#services" onclick="disparitie()">SERVICES</a>
+            <a class="linkMobile" href="#projects" onclick="disparitie()">PROJECTS</a>
+            <a class="linkMobile" href="#blog" onclick="disparitie()">BLOG</a>
+            <a class="linkMobile" href="#contact" onclick="disparitie()">CONTACT</a>
+        </div>
+    
+    </div>
+    
+    <ul class="myPopup" id="myPopup">
+        <!--<li>...</li>-->
+    </ul>
+
+    <!--main-->
+    <main>
+        <!--INTRODUCERE-->
+        <div class="container1">
+            <div class="titlu">
+                <p class="minus1menu">BEAUTY CENTER</p>
+                <h1 class="minus1menu">Beauty and success starts here.</h1>
+                <button class="minus1menu">RESERVE NOW</button>
+                <div class="bubbles">
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                </div>
+            </div>
+            <div class="img-intro">
+                <img class="imgPsd" src="../Resources/fundalEbrows3.png" alt="imgFundal">
+            </div>
+        </div>
+        
+
+        <!--CONTENT 2 (Services)-->
+        <a name="services"></a>
+        <div class="container2">
+            <div class="title_services">
+                <p class="servicii">Services</p>
+            </div>
+        
+            <div class="div-blocuri" id="div_blocuri">
+                <div class="blocC2">
+                    <div class="cos_fav">
+                        <div data-id="stilizare" class="cos_serv">
+                            <i data-id="stilizare" id="heartt" class="fa-solid fa-cart-shopping heartt"></i>
+                        </div> 
+                    </div>
+                    <img src="../Resources/stilizare.jpg" alt="Stilizarea sprancenelor" width="100%" height="250px">
+                    <p class="title_serv stilizare">Stilizarea Sprâncenelor</p>
+                    <div class="ratingStar">
+                        <span class="fa fa-star checkedd"></span>
+                        <span class="fa fa-star checkedd"></span>
+                        <span class="fa fa-star checkedd"></span>
+                        <span class="fa fa-star checkedd"></span>
+                        <span class="fa fa-star checkedd"></span>
+                    </div>
+                    <p class="pret_serv stilizare">150 lei</p>
+                    <button class="buton_serv1">Sună acum</button>
+                </div>
+
+                <div class="blocC2">
+                    <div class="cos_fav">
+                        <div data-id="stilizareVopsire" class="cos_serv">
+                            <i data-id="stilizareVopsire" id="heartt" class="fa-solid fa-cart-shopping heartt"></i>
+                        </div>
+                    </div>
+                    <img src="../Resources/vopsire.jpg" alt="Vopsirea sprancenelor" width="100%" height="250px">
+                    <p class="title_serv stilizareVopsire">Stilizarea Sprâncenelor și vopsirea cu vopsea/hennă</p>
+                    <div class="ratingStar">
+                        <span class="fa fa-star checkedd"></span>
+                        <span class="fa fa-star checkedd"></span>
+                        <span class="fa fa-star checkedd"></span>
+                        <span class="fa fa-star checkedd"></span>
+                        <span class="fa fa-star checkedd"></span>
+                    </div>
+                    <p class="pret_serv stilizareVopsire">250 lei</p>
+                    <button class="buton_serv">Sună acum</button>
+                </div>
+
+                <div class="blocC2">
+                    <div class="cos_fav">
+                        <div data-id="laminare" class="cos_serv">
+                            <i data-id="laminare" id="heartt" class="fa-solid fa-cart-shopping heartt"></i>
+                        </div>
+                    </div>
+                    <img src="../Resources/laminare.jpg" alt="Laminarea sprancenelor" width="100%" height="250px">
+                    <p class="title_serv laminare">Laminarea sprâncenelor (corecție inclusă)</p>
+                    <div class="ratingStar">
+                        <span class="fa fa-star checkedd"></span>
+                        <span class="fa fa-star checkedd"></span>
+                        <span class="fa fa-star checkedd"></span>
+                        <span class="fa fa-star checkedd"></span>
+                        <span class="fa fa-star checkedd"></span>
+                    </div>
+                    <p class="pret_serv laminare">300 lei</p>
+                    <button class="buton_serv">Sună acum</button>
+                </div>
+
+                <div class="blocC2">
+                    <div class="cos_fav">
+                        <div data-id="laminareVopsire" class="cos_serv">
+                            <i data-id="laminareVopsire" id="heartt" class="fa-solid fa-cart-shopping heartt"></i>
+                        </div>
+                    </div>
+                    <img src="../Resources/laminat_vopsit.jpg" alt="Laminarea si vopsirea sprancenelor" width="100%" height="250px">
+                    <p class="title_serv laminareVopsire">Laminarea și vopsirea sprâncenelor (corecție inclusă)</p>
+                    <div class="ratingStar">
+                        <span class="fa fa-star checkedd"></span>
+                        <span class="fa fa-star checkedd"></span>
+                        <span class="fa fa-star checkedd"></span>
+                        <span class="fa fa-star checkedd"></span>
+                        <span class="fa fa-star checkedd"></span>
+                    </div>
+                    <p class="pret_serv laminareVopsire">400 lei</p>
+                    <button class="buton_serv">Sună acum</button>
+                </div>
+            </div> <!--div-blocuri-->
+        </div> <!--container2-->
+
+        <!--CONTENT 3 (Products)-->
+        <div class="container3">
+            <div class="bloc_carouselPrd">
+                <div class="div_produse">
+                    <p class="title_produse">Eyebrow care products</p>
+                    <p class="descriere_titleP">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur adipisicing elit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus culpa.</p>
+                </div>
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                        <div class="mySlides1">
+                            <img class="produseImagini" src="../Resources/sapunsprancene.png" alt="Sapun p/u sprancene" width="250px">
+                            <p class="prgC1">Săpun pentru sprâncene</p>
+                            <p class="pretProdus">50 lei</p>
+                        </div> 
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <div class="mySlides1">
+                            <h1 class="titluC1">Produs 2</h1>
+                            <p class="prgC1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit consequatur at expedita perferendis molestiae dolores accusantium, impedit repellat? Ea, dignissimos. Doloribus perspiciatis eligendi expedita a quod. Voluptatem eos ratione aut.</p>
+                        </div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <div class="mySlides1">
+                            <h1 class="titluC1">Produs 3</h1>
+                            <p class="prgC1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, repudiandae. Porro asperiores perspiciatis vitae cumque. Blanditiis facilis deleniti cum ut beatae molestiae porro qui sequi laudantium? Optio nostrum velit maiores.</p>
+                        </div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="mySlides1">
+                            <h1 class="titluC1">Produs 4</h1>
+                            <p class="prgC1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex tenetur dolor ipsam cum quisquam officiis suscipit sequi sunt! Corrupti harum maiores blanditiis odio odit quam sint deleniti, earum voluptas consectetur.</p>
+                        </div> 
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="mySlides1">
+                            <h1 class="titluC1">Produs 5</h1>
+                            <p class="prgC1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas vitae nulla quia culpa deserunt sint ipsa repellendus possimus, ab doloremque quis minima quae illo eligendi voluptate porro voluptatum nihil delectus.</p>
+                        </div>
+                    </div>
+
+                    <!-- The dots/circles -->
+                    <div class="dots" style="text-align:center">
+                        <span class="dot" onclick="slideCurent(1)"></span>
+                        <span class="dot" onclick="slideCurent(2)"></span>
+                        <span class="dot" onclick="slideCurent(3)"></span>
+                        <span class="dot" onclick="slideCurent(4)"></span>
+                        <span class="dot" onclick="slideCurent(5)"></span>
+                    </div>
+                </div> <!--slideshow-container-->
+            </div> <!--bloc_carouselPrd-->
+        </div> <!--container3-->
+
+
+        <!--CONTENT 4 (Projects)-->
+        <a name="projects"></a>
+        <div class="container4">
+            <div class="title_services">
+                <p class="servicii">Projects</p>
+            </div>
+            <div class="container">
+                <div class="card">
+                  <div class="image">
+                    <img class="imgCardC4" src="../Resources//micropigmentare-oana-monea-7.jpg" onclick="openModal();currentSlidee(1)" alt="eee" width="100%" height="100%">
+                    <p class="titluCimage">Stilizarea sprâncenelor</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="image">
+                    <img class="imgCardC4" src="../Resources/stilizareSprancene.jpeg" onclick="openModal();currentSlidee(2)" alt="eee" width="100%" height="100%">
+                    <p class="titluCimage">Vopsirea cu vopsea/henna</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="image">
+                    <img class="imgCardC4" src="../Resources/laminareaSprancenelor" onclick="openModal();currentSlidee(3)" alt="eee" width="100%" height="100%">
+                    <p class="titluCimage">Laminarea sprâncenelor</p>
+                  </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img class="imgCardC4" src="../Resources/Micropigmentare-Poza-2.jpg" onclick="openModal();currentSlidee(4)" alt="eee" width="100%" height="100%">
+                        <p class="titluCimage">Micropigmentarea sprâncenelor</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img class="imgCardC4" src="../Resources//image-4.jpg" onclick="openModal();currentSlidee(5)" alt="eee" width="100%" height="100%">
+                        <p class="titluCimage">Corecția sprâncenelor</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img class="imgCardC4" src="../Resources/IMG-3009.jpg" onclick="openModal();currentSlidee(6)" alt="eee" width="100%" height="100%">
+                        <p class="titluCimage">Vopsirea sprâncenelor</p>
+                    </div>
+                </div>
+            </div>
+            <svg>
+            <filter id="wavy1">
+                <feturbulence x="0" y="0" baseFrequency="0.2" numOctaves="5" seed="1"></feturbulence>
+                <feDisplacementMap in="SourceGraphic" scale="20" />
+            </filter>
+            </svg>
+            <svg>
+            <filter id="wavy2">
+                <feturbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="1"></feturbulence>
+                <feDisplacementMap in="SourceGraphic" scale="20" />
+            </filter>
+            </svg>
+            <svg>
+            <filter id="wavy3">
+                <feturbulence x="0" y="0" baseFrequency="0.1" numOctaves="5" seed="1"></feturbulence>
+                <feDisplacementMap in="SourceGraphic" scale="20" />
+            </filter>
+            </svg>
+            <svg>
+            <filter id="wavy4">
+                <feturbulence x="0" y="0" baseFrequency="0.009" numOctaves="5" seed="1"></feturbulence>
+                <feDisplacementMap in="SourceGraphic" scale="20" />
+            </filter>
+            </svg>
+            <svg>
+            <filter id="wavy5">
+                <feturbulence x="0" y="0" baseFrequency="0.15" numOctaves="5" seed="1"></feturbulence>
+                <feDisplacementMap in="SourceGraphic" scale="20" />
+            </filter>
+            </svg>
+            <svg>
+            <filter id="wavy6">
+                <feturbulence x="0" y="0" baseFrequency="0.01" numOctaves="5" seed="1"></feturbulence>
+                <feDisplacementMap in="SourceGraphic" scale="20" />
+            </filter>
+            </svg>
+        </div>
+
+        <div id="myModal" class="modal">
+            <span class="closee cursor" onclick="closeeModal()">&times;</span>
+            <div class="modal-content">
+
+              <div class="mySlidess">
+                <div class="numbertext">1 / 6</div>
+                <img class="imgModal" src="../Resources//micropigmentare-oana-monea-7.jpg" alt=".">
+              </div>
+          
+              <div class="mySlidess">
+                <div class="numbertext">2 / 6</div>
+                <img class="imgModal" src="../Resources/stilizareSprancene.jpeg" alt=".">
+              </div>
+          
+              <div class="mySlidess">
+                <div class="numbertext">3 / 6</div>
+                <img class="imgModal" src="../Resources/laminareaSprancenelor" alt=".">
+              </div>
+              
+              <div class="mySlidess">
+                <div class="numbertext">4 / 6</div>
+                <img class="imgModal" src="../Resources/Micropigmentare-Poza-2.jpg" alt=".">
+              </div>
+
+              <div class="mySlidess">
+                <div class="numbertext">5 / 6</div>
+                <img class="imgModal" src="../Resources//image-4.jpg" alt=".">
+              </div>
+
+              <div class="mySlidess">
+                <div class="numbertext">6 / 6</div>
+                <img class="imgModal" src="../Resources/IMG-3009.jpg" alt=".">
+              </div>
+              
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div> 
+          
+              <div class="column">
+                <img class="demo cursor" src="../Resources//micropigmentare-oana-monea-7.jpg" onclick="currentSlidee(1)" alt="Stilizarea sprâncenelor">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="../Resources/stilizareSprancene.jpeg" onclick="currentSlidee(2)" alt="Vopsirea sprâncenelor cu vopsea/henna">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="../Resources/laminareaSprancenelor" onclick="currentSlidee(3)" alt="Laminarea sprâncenelor">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="../Resources/Micropigmentare-Poza-2.jpg" onclick="currentSlidee(4)" alt="Micropigmentarea sprâncenelor">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="../Resources//image-4.jpg" onclick="currentSlidee(5)" alt="Corecția sprancenelor">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="../Resources/IMG-3009.jpg" onclick="currentSlidee(6)" alt="Vopsirea sprâncenelor">
+              </div>
+            </div>
+          </div>
+
+
+
+        <!--CONTENT 5 (Blog)-->
+        <a name="blog"></a>
+        <div class="container5">
+            <div class="title_services">
+                <p class="servicii">Blog</p>
+            </div>
+            <div class="partea1">
+                <div class="blocC5">
+                    <div class="cardS">
+                        <div class="imageS">
+                            <img src="../Resources/farmasi2.jpg" alt="farmasi" height="100%" width="100%">
+                        </div>
+                    </div>
+                </div>
+                <div class="blocC5">
+                    <p class="prgC5"><b>Farmasi products</b> lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur consectetur at eaque quibusdam minima provident, ex a distinctio pariatu.</p>
+                    <button class="buton_serv btnFarmasi" id="farmasi">Comandă produse</button>
+                </div>
+            </div>
+            <div class="partea2">
+                <div class="blocC5">
+                    <p class="prgC5"><b>My personal life</b> lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur consectetur at eaque quibusdam minima provident, ex a distinctio pariatu.</p>
+                    <button class="buton_serv btnFarmasi" id="instaBlog">Vezi pagina</button>
+                </div>
+                <div class="blocC5">
+                    <div class="cardS">
+                        <div class="imageS">
+                            <img src="../Resources/blogLige.jpg" alt="blog" width="100%" height="100%">
+                        </div>
+                        <a name="contact"></a>
+                    </div>
+                </div>
+            </div>
+
+            <svg>
+                <filter id="wavyy1">
+                    <feturbulence x="0" y="0" baseFrequency="0.05" numOctaves="5" seed="1"></feturbulence>
+                    <feDisplacementMap in="SourceGraphic" scale="20" />
+                </filter>
+            </svg>
+            <svg>
+                <filter id="wavyy2">
+                    <feturbulence x="0" y="0" baseFrequency="0.15" numOctaves="5" seed="1"></feturbulence>
+                    <feDisplacementMap in="SourceGraphic" scale="20" />
+                </filter>
+            </svg>
+        </div>
+
+
+        <!--CONTENT 6 (Contact)-->
+        <div class="container6">
+            <div class="contact_info">
+                <div class="blocC6">
+                    <div class="iconC6">
+                        <i class="fa-solid fa-phone marginIcon"></i>
+                    </div>
+                    <div class="textC6">
+                        <p>HAVE QUESTIONS?<br>Call Us at: +40 790 481 664</p>
+                    </div>
+                </div>
+
+                <div class="blocC6">
+                    <div class="iconC6">
+                        <i class="fa-solid fa-location-dot"></i>                   
+                     </div>
+                    <div class="textC6">
+                        <p>LOCATED IN<br>Iași, România</p>
+                    </div>
+                </div>
+
+                <div class="blocC6">
+                    <div class="iconC6">
+                        <i class="fa-solid fa-calendar-days"></i>                    
+                    </div>
+                    <div class="textC6">
+                        <p>BUSINESS HOURS<br>Mon-Sat, 9am-8pm</p>
+                    </div>
+                </div>
+            </div>
+            <div class="imagini_carousel">
+                <div class="marquee">
+                    <ul class="marquee-content">
+                      <li><img src="../Resources/laminare.jpg" alt="img"></li>
+                      <li><img src="../Resources/image-4.jpg" alt="img"></li>
+                      <li><img src="../Resources/laminat_vopsit.jpg" alt="img"></li>
+                      <li><img src="../Resources/laminareaSprancenelor" alt="img"></li>
+                      <li><img src="../Resources/stilizareSprancene.jpeg" alt="img"></li>
+                      <li><img src="../Resources/sprancene11" alt="img"></li>
+                      <li><img src="../Resources/stilizare.jpg" alt="img"></li>
+                      <li><img src="../Resources/vopsire.jpg" alt="img"></li>
+                      <li><img src="../Resources/vopsireHenna.jpg" alt="img"></li>
+                      <li><img src="../Resources/laminat_vopsit.jpg" alt="img"></li>
+                      <li><img src="../Resources/stilizareSprancene.jpeg" alt="img"></li>
+                      <li><img src="../Resources/vopsire.jpg" alt="img"></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+        <div class="container_final">
+            <a class="socialMediaFinal" href="https://www.facebook.com/dumitrita.tomac" target="_blank">Facebook</a>
+            <a class="socialMediaFinal" href="https://www.instagram.com/e_y_ebrows/" target="_blank">Instagram</a>
+            <a class="socialMediaFinal" href="https://web.whatsapp.com/" target="_blank">WhatsApp</a>
+            <a class="socialMediaFinal" href="https://t.me/+Y0CqkW7QNcpmNDVk" target="_blank">Telegram</a>
+        </div>
+        
+
+    </main>
+
+    <!--HEADER-->
+    <footer>
+        <div class="content_footer">
+            <img src="../Resources/logo_ebrows.png" alt="logotip">
+            <div class="nav_footer">
+                <a class="link" href="#">HOME</a>
+                <a class="link" href="#services">SERVICES</a>
+                <a class="link" href="#">PROJECTS</a>
+                <a class="link" href="#">BLOG</a>
+                <a class="link" href="#">CONTACT</a>
+            </div>
+            <form class="form_social_media">
+                <input class="social_media" type="image" src="../Resources/Facebook.png" onclick="facebook()" alt="Facebook" style="border-radius: 3px;">
+                <input class="social_media" type="image" src="../Resources/Instagram.jpg" onclick="instagram()" alt="Instagram">
+                <input class="social_media" type="image" src="../Resources/WhatsApp.png" onclick="whatsapp()" alt="WhatsApp">
+                <input class="social_media" type="image" src="../Resources/Telegram.png" onclick="telegram()" alt="Telegram" style="border-radius: 3px;">
+            </form>
+            <div class="div_copyright">
+                <p class="copyright">&copy; Copyright 2023. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./scriptHome.js"></script>
+    <script>
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+            document.getElementById("myBtn").style.display = "none";
+            document.getElementById("nav").style.zIndex = "-1";
+        }
+        
+        function closeeModal() {
+            document.getElementById("myModal").style.display = "none";
+            document.getElementById("myBtn").style.display = "block";
+            document.getElementById("nav").style.zIndex = "100";
+        }
+        
+        var slideIndexx = 1;
+        showSlides(slideIndexx);
+        
+        function plusSlides(n) {
+            showSlides(slideIndexx += n);
+        }
+        
+        function currentSlidee(n) {
+            showSlides(slideIndexx = n);
+        }
+        
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlidess");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {slideIndexx = 1}
+            if (n < 1) {slideIndexx = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndexx-1].style.display = "block";
+            dots[slideIndexx-1].className += " active";
+            captionText.innerHTML = dots[slideIndexx-1].alt;
+        }
+    </script>
+</body>
+</html>

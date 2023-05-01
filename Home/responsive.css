@@ -1,0 +1,276 @@
+/*Dimensiune tableta iPad Air*/
+@media only screen and (max-width: 992px){
+    .cos{
+        padding-right: 30px;
+    }
+    .img-intro{
+        display: none;
+    }
+    .container1{
+        display: flex;
+        justify-content: center;
+        height: 50vh;
+        
+        background-image: url("../Resources/makeupbkg.jpg");
+        background-size: cover;
+        
+    }
+    .bubbles{
+        height: 50vh;
+    }
+    .bubble{
+        background:gray;
+    }
+    .titlu{
+        width: 80%;
+    }
+    .div-blocuri{
+        grid-gap: 40px;
+        margin: 20px auto;
+    }
+    .title_produse{
+        font-size: 55px;
+        letter-spacing: 0px;
+    }
+    .container {
+        transform: translate(-25px);
+    }
+    .partea2{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .prgC5{
+        text-align: center;
+        max-width: 90%;
+    }
+    .blocC5 .cardS {
+        transform: translate(-15px);
+    }
+    .partea1 .blocC5:nth-of-type(1){
+        height: 600px;
+    }
+    .partea2 .blocC5:nth-of-type(2){
+        height: 550px;
+    }
+    .blocC5 .cardS {
+        width: 480px;
+        height: 550px;
+    }
+    .blocC5 .cardS:before {
+        width: 455px;
+        height: 525px;
+    }
+    .modal {
+        padding-top: 200px;
+    }
+    .content_footer{
+        width: 100%;
+    }
+}
+
+
+/*Dimensiune tableta iPad mini*/
+@media only screen and (max-width: 992px){
+    .div-contact{
+        width: 100%;
+    }
+    .contact_prg{
+        margin-left: 10px;
+    }
+    .logo{
+        width: 26%; 
+    }
+    .cos{
+        display: flex;
+        justify-content: flex-end;
+        width: 22%;
+    }
+    .partea1 .blocC5:nth-of-type(2){
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .marquee {
+        height: 16vh;
+    }
+}
+
+
+
+
+/*Dimensiune mobil iPhone*/
+@media only screen and (max-width: 600px){
+    .language{
+        display: none;
+    }
+    .navigation{
+        display: none;
+    }
+    nav{
+        justify-content: space-between;
+    }
+    .cos{
+        width: auto;
+    }
+    .myPopup{
+        right: 0vw;
+        width: 100vw;
+        background-color: rgba(128, 128, 128, 0.826);
+    }
+    #bars{
+        display: block;
+        margin-right: 15px;
+    }
+    #cart_shopping{
+        display: none;
+    }
+    .titlu{
+        width: 100%;
+    }
+    .titlu p{
+        font-size: 14px;
+    }
+    .titlu h1{
+        font-size: 40px;
+    }
+    .titlu button{
+        padding: 10px;
+        width: 120px;
+        margin-top: 20px;
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+    .prgC1{
+        max-width: 90%;
+    }
+    .cos_favScript{
+        display: flex;
+    }
+    .div-blocuri{
+        grid-template-columns: repeat(auto-fill, 320px);
+    }
+    .blocC2{
+        width: 320px;
+        height: 500px;
+    }
+    .blocC2 img{
+        height: 300px;
+    }
+    .cos_fav{
+        width: 300px;
+    }
+    .buton_serv1{
+        margin-top: 0px;
+    }
+    .title_serv{
+        font-size: 16px;
+        max-width: 100%;
+    }
+    .pret_serv{
+        font-size: 14px;
+    }
+    .container .card {
+        width: 123px;
+        height: 163px;
+        margin: 30px;
+    }
+    .container .card:before {
+      width: 100px;
+      height: 135px;
+    }
+    .titluCimage{
+        display: none;
+    }
+    .container .card .image {
+        background-color: transparent;
+        border: 1px dotted black;
+    }
+    .prgC5{
+        max-width: 90%;
+    }
+    .partea1 .blocC5:nth-of-type(1){
+        height: 550px;
+    }
+    .partea2 .blocC5:nth-of-type(2){
+        height: 550px;
+    }
+    .blocC5 .cardS {
+        width: 300px;
+        height: 410px;
+    }
+    .blocC5 .cardS:before {
+        width: 270px;
+        height: 385px;
+    }
+    .blocC5{
+        width: auto;
+    }
+    .blocC5 .cardS {
+        transform: translate(-15px);
+    }
+    .produseImagini{
+        width: 180px;
+    }
+    .partea1 .blocC5:nth-of-type(2){
+        height: 180px;
+    }
+    .partea2 .blocC5:nth-of-type(1){
+        height: 180px;
+    }
+    .modal {
+        padding-top: 160px;
+    }
+    .column {
+        height: 60px;
+    }
+    .title_produse{
+        font-size: 45px;
+    }
+    .blocC6{
+        width: 33.33%;
+        height: 100px;
+    }
+    .iconC6{
+        font-size: 25px;
+    }
+    .textC6{
+        padding-left: 10px;
+        font-size: 10px;
+        letter-spacing: 0px;
+    }
+    .marginIcon{
+        margin-left: 5px;
+    }
+    footer{
+        height: 220px;
+    }
+    .content_footer{
+        width: 100%;
+        height: 100%;
+
+    }
+    .content_footer img{
+        width: 200px;
+        height: 100px;
+    }
+    .link{
+        font-size: 10px;
+    }
+    .copyright{
+        font-size: 10px;
+    }
+    .partea1 .blocC5:nth-of-type(2){
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 400px){
+    .contact_prg{
+        font-size: 12px;
+    }
+    .myPopup{
+        width: 380px;
+    }
+}
